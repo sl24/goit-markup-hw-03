@@ -1,26 +1,59 @@
 /* Герой */
 
+.hero {
+  text-align: center;
+  /* padding-bottom: 47px;  пока непонятно!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+}
+
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 46px;
+
   color: var(--title-text-white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  /* outline: 1px solid red; */
 }
 
 .hero-button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
   color: var(--title-text-white);
+  background-color: #2196f3;
+
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  text-align: center;
+  text-decoration: none;
 }
 
-/* Секция */
+/* Секция  */
+/* В финальной версии скрыть заголовок Преимущества, пока убрали марджины */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  /* outline: 1px solid red; */
+}
+
+.section p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -28,10 +61,18 @@
   text-align: center;
 }
 
+/* Скрыл заголовок секции Преимущества*/
+.hidden {
+  display: none;
+}
+
 /* Преимущества + Чем мы занимаемся */
 
 .feature-list .title,
 .section .title-white {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -40,18 +81,82 @@
 
 /* Преимущества */
 
+.feature .item-image {
+  width: 278px;
+  height: 120px;
+  background-color: #f5f4fa;
+  padding: 25px 104px;
+  border-radius: 4px;
+}
+
+.feature .feature-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature-list .item {
+  width: calc((100% - 90px) / 4);
+}
+
+.feature-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .feature-list .title {
   color: var(--title-text-color);
 }
 
 /* Чем мы занимаемся */
 
+.our-work .work-list {
+  display: flex;
+}
+
+.work-list .item {
+  width: calc((100%-60px) / 3);
+}
+
+.work-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .section .title-white {
+  margin-top: 27px;
+  margin-bottom: 27px;
+
   color: var(--title-text-white);
   text-align: center;
 }
 
+.work-examples {
+  display: block;
+}
+
 /* Наша команда */
+.section.colored {
+  background-color: #f5f4fa;
+}
+
+.team .our-team {
+  display: flex;
+}
+
+.our-team .team-member {
+  width: calc((100% - 90px) / 4);
+}
+
+.our-team .team-member:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-team .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.our-team .people {
+  margin-bottom: 16px;
+}
 
 .our-team .title,
 .our-team .people {
@@ -63,4 +168,35 @@
 .our-team .title {
   color: var(--title-text-color);
   font-weight: 500;
+}
+
+.photos {
+  display: block;
+}
+
+/* Иконки соцсетей Нашей команды */
+
+.our-team .our-team-social {
+  display: flex;
+}
+
+.our-team .social:not(:last-child) {
+  margin-right: 11px;
+}
+
+/* Постоянные клиенты */
+.clients .clients-list {
+  display: flex;
+}
+
+/* Границы для логотипов компаний секции Постоянные клиенты */
+
+.clients-list .item {
+  width: 175px;
+  height: 90px;
+  border: 1px solid var(--icon-border-color);
+}
+
+.clients-list .item:not(:last-child) {
+  margin-right: 30px;
 }
