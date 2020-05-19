@@ -7,10 +7,6 @@ button {
   display: none;
 }
 
-.page-header {
-  border-bottom: 1px solid var(--header-line);
-}
-
 .portfolio .names {
   border: none;
   border-radius: 4px;
@@ -57,6 +53,31 @@ button {
   margin-bottom: 30px;
 }
 
+.example-item .link {
+  display: block;
+}
+
+.example-item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
 .portfolio .example-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -66,9 +87,8 @@ button {
 }
 
 .portfolio .item-title {
-  margin-top: 20px;
+  margin: 0;
   margin-bottom: 4px;
-  margin-left: 24px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -77,9 +97,7 @@ button {
 }
 
 .portfolio .subject {
-  margin-top: 0;
-  margin-bottom: 20px;
-  margin-left: 24px;
+  margin: 0;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;

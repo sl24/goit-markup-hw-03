@@ -82,11 +82,20 @@
 /* Преимущества */
 
 .feature .item-image {
-  width: 278px;
+  width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   padding: 25px 104px;
   border-radius: 4px;
+}
+
+.section.feature {
+  border-bottom: 1px solid var(--header-line);
+}
+
+/* ------Добавлен ховер после исправления ошибок */
+.feature .item-image:hover {
+  background-color: var(--accent-color);
 }
 
 .feature .feature-list {
@@ -195,6 +204,11 @@
   width: 175px;
   height: 90px;
   border: 1px solid var(--icon-border-color);
+
+  /* ----- Добавлены 2 строки ниже после исправления */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .clients-list .item:not(:last-child) {

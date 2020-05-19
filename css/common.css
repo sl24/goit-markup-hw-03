@@ -56,6 +56,9 @@ body {
 /* Временный цвет фона для того чтобы видеть абзацы с белым текстом!!!!!!!!!!!!!! */
 .temporary-bgc {
   background-color: #afeeee;
+  /* ------ Добавлены после исправления 2 строки ниже */
+  min-height: 600px;
+  padding-top: 200px;
 }
 
 /* Логотип */
@@ -75,12 +78,20 @@ body {
 
 /* Навигация шапки */
 
+/* .section {
+  outline: 1px solid green;
+} */
+
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   /* outline: 1px solid red; */
+}
+
+.page-header {
+  border-bottom: 1px solid var(--header-line);
 }
 
 /* Main nav */
@@ -147,7 +158,7 @@ footer {
 }
 
 .page-footer {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -157,7 +168,7 @@ footer {
 .footer-wrap {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: baseline;
   padding-top: 55px;
   margin-bottom: 28px;
 }
@@ -188,7 +199,8 @@ footer {
 }
 
 .footer .title-white {
-  display: inline-block;
+  /* display: inline-block; исправлено, убрал это свойство*/
+  margin-top: 0;
   margin-bottom: 9px;
   color: var(--title-text-white);
   font-style: normal;
