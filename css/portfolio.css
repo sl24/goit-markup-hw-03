@@ -3,10 +3,6 @@ button {
   font-family: inherit;
 }
 
-.portfolio h1 {
-  display: none;
-}
-
 .portfolio .names {
   border: none;
   border-radius: 4px;
@@ -55,12 +51,6 @@ button {
 
 .example-item .link {
   display: block;
-}
-
-.example-item img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .card {
