@@ -19,6 +19,7 @@
   --icon-border-color: #afb1b8;
   --copyright-line: rgba(255, 255, 255, 0.1);
   --header-line: #ececec;
+  --card-border-line: #eeeeee;
 }
 
 html {
@@ -127,6 +128,7 @@ img {
 .site-nav,
 .contacts-nav {
   display: flex;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -137,10 +139,11 @@ img {
 }
 
 .site-nav .link {
-  color: var(--title-text-color);
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  color: var(--title-text-color);
 }
 
 .site-nav .link.current {
@@ -156,10 +159,11 @@ img {
 }
 
 .contacts-nav .link {
-  color: var(--primary-text-color);
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  color: var(--primary-text-color);
 }
 
 .site-nav .link:hover,
@@ -220,6 +224,7 @@ footer {
   /* display: inline-block; исправлено, убрал это свойство*/
   margin-top: 0;
   margin-bottom: 9px;
+
   color: var(--title-text-white);
   font-style: normal;
 }
@@ -227,6 +232,7 @@ footer {
 .footer p.title-white.join {
   margin-top: 0;
   margin-bottom: 21px;
+
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -256,7 +262,7 @@ footer {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--title-text-white);
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 
 /* Соцсети в футере */
@@ -270,7 +276,4 @@ footer {
 
 .footer-social .social-item:not(:last-child) {
   margin-right: 11px;
-}
-
-.footer-item {
 }
